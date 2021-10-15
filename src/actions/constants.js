@@ -1,0 +1,4 @@
+
+export const CITY_SEARCH = 'CITY_SEARCH';
+export const CITIES_SELECTED = 'CITIES_SELECTED';
+export const CITY_DELETED = 'CITY_DELETED';

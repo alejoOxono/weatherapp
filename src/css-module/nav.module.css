@@ -1,0 +1,30 @@
+.navBar{
+    background-color: #e3f2fd;
+    display: flex;
+    padding: 0.5em;
+    margin-bottom: 2em;
+}
+
+.navBarContenido{
+    text-decoration: none;    
+    color: black;
+    display: flex;
+    width: 50%;
+}
+
+.navBar h4{
+    width: 50%;
+    display: flex;
+    margin: 0;
+    justify-content: right;
+}
+
+.navBarContenido h4{
+    display: flex;
+    justify-content: left;
+}
+
+h4{
+    font-size:medium !important;
+    font-weight: lighter;
+}

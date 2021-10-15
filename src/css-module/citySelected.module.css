@@ -1,0 +1,65 @@
+.container{
+    display:flex;
+}
+
+.box{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    
+}
+
+.searchButton{
+    display: flex;
+    justify-content: center;
+
+}
+
+.searchButton button{
+    border:  0.2em solid #d1e8f8;
+    margin: 0 0 -5em -250%;
+    border-radius: 100%;
+    padding: 0.8em 0.3em 0.8em 0.3em;
+    background-color: transparent;
+}
+
+.searchButton button:hover{
+    box-shadow: 2px 1px 1px 2px #818181;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1em 0.5em 1em 0.5em;
+    background-color: #d1e8f8;
+}
+
+.city{
+    display: flex;
+    width: 40%;
+    justify-content: start;
+    flex-direction: column;
+    margin: 0 0 0 25%;
+    padding: 0.5em 5% 2em 5%;
+    height: 20em;
+    border: #d1e8f8 0.2em solid;
+    border-radius: 10%;
+    box-shadow: 0 12px 16px 3px #d1e8f8,
+        0 9px 23px 8px #d1e8f8, 0 11px 6px -1px #d1e8f8;
+}
+
+.citiesAdd{
+    display: flex;
+    width: 40%;
+    justify-content: left;
+    align-items: center;
+}
+
+.city h3,h2{
+    font-size: medium;
+    font-weight: bold;
+    justify-content: center;
+}
+
+p, span{
+    font-size: small;
+    justify-content: center;
+
+}

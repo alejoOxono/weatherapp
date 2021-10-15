@@ -1,0 +1,97 @@
+.container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    box-shadow: 0 12px 16px 3px rgba(0, 0, 0, 0.14),
+        0 9px 23px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    height: 80%;
+    margin-top: 15%;
+    justify-content: center;
+}
+
+.contenido h3,p{
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    width: 100%;
+    z-index: -2;
+}
+
+.container button {
+    height: 10%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1em;
+    display: flex;
+    
+}
+
+.container button .arrow {
+    border: solid #fff;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.3s ease-out;
+    outline: none;
+}
+
+.container button .arrow:hover{
+    border: gray solid;
+    border-width: 0 4px 4px 0;
+
+}
+
+#rightBtn {
+    margin: auto 0 auto -2em;
+    background: #93d2ff;
+    height: fit-content;
+    border-radius: 100%;
+}
+
+#rightBtn .arrow {
+    transform: rotate(-45deg);
+}
+
+#leftBtn {
+    z-index: 0;
+    margin: auto -2em auto 0;
+    background: #93d2ff;
+    height: fit-content;
+    border-radius: 100%;
+}
+
+
+#leftBtn .arrow {
+    transform: rotate(135deg);
+}
+
+.buttonQuit{
+    display: flex;
+    margin-top: 25%;
+    width: 100%;
+    justify-content: center;
+}
+
+.buttonQuit button{
+    width: fit-content;
+    background-color: transparent;
+    border: gray 0.05em solid;
+    border-radius: 10%;
+    justify-content: center;
+    height: fit-content;
+}
+
+.buttonQuit button:hover{
+    color: tomato;
+    border: black 0.05em solid;
+}

@@ -1,0 +1,43 @@
+
+.barSearch{
+    display:block;
+    margin-bottom: 5em;
+}
+
+.barSearch h4{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: small !important;
+    font-family: Bookman, URW Bookman L, serif !important;
+    font-weight: lighter;
+}
+
+.inputSearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputSearch input{
+    display: flex;
+    width: 80%;
+}
+
+.inputSearch button{
+    border: none;
+    border-left: rgb(158, 158, 158) 0.05em solid;
+    margin-left: -4.6em;
+    padding: 0.3em 0 0.3em 0.8em; 
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.inputSearch button:hover{
+    font-weight: bold;
+    color:skyblue;
+    border-left: rgb(200, 255, 252) 0.05em solid;
+    cursor: pointer;
+}

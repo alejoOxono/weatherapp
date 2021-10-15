@@ -1,0 +1,15 @@
+.botton{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.botton h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
