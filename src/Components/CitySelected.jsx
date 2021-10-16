@@ -27,9 +27,9 @@ const CitySelected = (props) => {
                     <h3>Humidity: </h3><span>{props.city.main.humidity}</span>
                     <h3>Wind speed: </h3><span>{props.city.wind.speed}</span>
 
-                </div>
-                <div className={styles.searchButton}>
-                    <button onClick={(e) => addCity(e)}>List ADD</button>
+                    <div className={styles.searchButton}>
+                        <button onClick={(e) => addCity(e)}>List ADD</button>
+                    </div>
                 </div>
             </div>
 

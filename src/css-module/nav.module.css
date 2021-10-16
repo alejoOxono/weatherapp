@@ -5,6 +5,11 @@
     margin-bottom: 2em;
 }
 
+.modal a{
+  text-decoration: none;
+}
+
+
 .navBarContenido{
     text-decoration: none;    
     color: black;
@@ -12,19 +17,62 @@
     width: 50%;
 }
 
-.navBar h4{
+.about{
+    text-decoration: none;    
+    color: black;
     width: 50%;
     display: flex;
     margin: 0;
     justify-content: right;
+    font-size:medium;
+    font-weight: lighter;
 }
 
-.navBarContenido h4{
-    display: flex;
-    justify-content: left;
+a:hover{
+    color: navy;
 }
 
 h4{
     font-size:medium !important;
     font-weight: lighter;
 }
+
+
+
+  .modalContenido{
+    background-color:aqua;
+    width:300px;
+    padding: 10px 20px;
+    margin: 10% auto;
+    position: relative;
+  }
+
+  .modalContenido h2{
+    display: flex;
+    font-size: large;
+    padding:5% 5% 10% 5%;
+  }
+  
+  .modalContenido p{
+    display: flex;
+    font-size: medium;
+    padding: 2em;
+  }
+
+
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+  }
+
+  .modal:target{
+    opacity:1;
+    pointer-events:auto;
+  }

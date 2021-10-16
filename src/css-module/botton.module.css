@@ -1,6 +1,6 @@
 .botton{
     display: flex;
-    position: absolute;
+    position:fixed;
     bottom: 0;
     width: 100%;
     justify-content: center;
@@ -13,3 +13,23 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+@media(max-height:570px){
+    .botton{
+        bottom: -50%; 
+    }
+}
+
+
+@media(max-width:600px){
+    .botton{
+        display: flex;
+        position: absolute;
+        bottom: -80%; 
+    }
+}
+
+
