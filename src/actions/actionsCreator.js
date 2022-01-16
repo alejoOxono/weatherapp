@@ -1,18 +1,21 @@
+import axios from 'axios'
 
 
 const { CITY_DELETED, CITY_SEARCH, CITIES_SELECTED } = require('./constants')
 
 
 export const citySearch = (url) => {
-    return function (dispatch) {
-        return fetch(url)
-            .then(answer => answer.json())
-            .then(json => {
+    return async function (dispatch) {
+        return axios.get(url)
+            .then(data => {
                 dispatch({
                     type: CITY_SEARCH,
-                    payload: json
+                    payload: data.data
                 })
             })
+            .catch((err) => {
+                console.log(err);
+            })          
     }
 }
 

@@ -20,12 +20,12 @@ const CitySelected = (props) => {
 
             <div className={styles.box}>
                 <div className={styles.city}>
-                    <h3>city: </h3><span>{props.city.name}</span>
-                    <h3>Weather: </h3><span>{props.city.weather[0].main}</span>
-                    <h3>Description: </h3><span>{props.city.weather[0].description}</span>
-                    <h3>Temp: </h3><span>{props.city.main.temp}</span>
-                    <h3>Humidity: </h3><span>{props.city.main.humidity}</span>
-                    <h3>Wind speed: </h3><span>{props.city.wind.speed}</span>
+                    <p className={styles.firstTitle}><b>city: </b>&nbsp; {props.city.name}</p>
+                    <p><b>Weather: </b>&nbsp; {props.city.weather[0].main}</p>
+                    <p><b>Description: </b>&nbsp; {props.city.weather[0].description}</p>
+                    <p><b>Temp: </b>&nbsp; {props.city.main.temp}</p>
+                    <p><b>Humidity: </b>&nbsp; {props.city.main.humidity}</p>
+                    <p><b>Wind speed: </b>&nbsp; {props.city.wind.speed}</p>
 
                     <div className={styles.searchButton}>
                         <button onClick={(e) => addCity(e)}>List ADD</button>

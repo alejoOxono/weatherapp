@@ -1,23 +1,9 @@
-.botton{
-    display: flex;
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    justify-content: center;
-    background-color: rgb(29, 29, 29);
-    color: white;
-}
-
-.botton h5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
 
-@media(max-height:570px){
+
+/* @media(max-height:570px){
     .botton{
         bottom: -50%; 
     }
@@ -30,6 +16,6 @@
         position: absolute;
         bottom: -80%; 
     }
-}
+} */
 
 

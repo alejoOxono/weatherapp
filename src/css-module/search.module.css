@@ -1,3 +1,52 @@
+.gridContainer {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 5vh 50vh 900px 5vh;
+    gap: 0px 0px;
+    grid-template-areas:
+      "nav"
+      "imagen"
+      "content"
+      "footer";
+  }
+  
+  .nav { grid-area: nav; }
+  
+  .imagen { grid-area: imagen;}
+
+  .content { grid-area: content; }
+  
+  .footer { grid-area: footer; }
+  
+
+  .imagen {
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='4320' height='720' preserveAspectRatio='none' viewBox='0 0 4320 720'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1033%26quot%3b)' fill='none'%3e%3crect width='4320' height='720' x='0' y='0' fill='rgba(206%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M4608 720L0 720 L0 376.12Q181.38 197.5%2c 360 378.89Q485.74 288.63%2c 576 414.37Q710.76 333.13%2c 792 467.89Q849.91 309.8%2c 1008 367.71Q1146.38 290.09%2c 1224 428.47Q1343.61 332.08%2c 1440 451.69Q1574.87 226.55%2c 1800 361.42Q2013.3 214.72%2c 2160 428.01Q2275.68 327.69%2c 2376 443.38Q2459.84 311.22%2c 2592 395.05Q2754.54 197.59%2c 2952 360.13Q3102.74 294.87%2c 3168 445.6Q3323.26 240.86%2c 3528 396.11Q3751.3 259.42%2c 3888 482.72Q4044.03 278.75%2c 4248 434.79Q4391.1 217.89%2c 4608 360.99z' fill='rgba(93%2c 193%2c 185%2c 1)'%3e%3c/path%3e%3cpath d='M4464 720L0 720 L0 468.09Q220.56 328.65%2c 360 549.22Q478.64 451.86%2c 576 570.5Q642.51 421.01%2c 792 487.53Q933.77 413.3%2c 1008 555.07Q1076.77 407.84%2c 1224 476.61Q1410.69 303.3%2c 1584 489.99Q1678.31 368.3%2c 1800 462.61Q1954.68 401.29%2c 2016 555.97Q2104.77 428.74%2c 2232 517.51Q2309.6 379.11%2c 2448 456.7Q2641.14 289.85%2c 2808 482.99Q3014.68 329.67%2c 3168 536.35Q3358.26 366.62%2c 3528 556.88Q3715.18 384.07%2c 3888 571.25Q3957.39 424.64%2c 4104 494.03Q4298.79 328.82%2c 4464 523.61z' fill='rgba(0%2c 97%2c 169%2c 1)'%3e%3c/path%3e%3cpath d='M4536 720L0 720 L0 574.16Q119.13 477.29%2c 216 596.42Q302.89 467.31%2c 432 554.2Q588.25 494.45%2c 648 650.69Q761.16 547.85%2c 864 661.01Q1018.13 455.14%2c 1224 609.28Q1302.41 471.69%2c 1440 550.1Q1634.18 384.29%2c 1800 578.47Q1922.76 485.24%2c 2016 608Q2145.34 521.34%2c 2232 650.67Q2324.22 526.88%2c 2448 619.1Q2590.95 402.06%2c 2808 545.01Q2938.9 459.91%2c 3024 590.81Q3217.42 424.23%2c 3384 617.65Q3513.1 530.75%2c 3600 659.85Q3651.94 495.79%2c 3816 547.73Q4035.39 407.13%2c 4176 626.52Q4323.86 414.38%2c 4536 562.25z' fill='rgba(81%2c 209%2c 246%2c 1)'%3e%3c/path%3e%3cpath d='M4608 720L0 720 L0 716.35Q84.72 585.07%2c 216 669.78Q385.31 479.09%2c 576 648.4Q761.04 473.44%2c 936 658.48Q1030.07 536.55%2c 1152 630.61Q1281.36 543.97%2c 1368 673.32Q1503.36 592.68%2c 1584 728.05Q1644.46 572.51%2c 1800 632.97Q1994.72 467.69%2c 2160 662.42Q2368.74 511.15%2c 2520 719.89Q2590.21 574.1%2c 2736 644.31Q2924.76 473.07%2c 3096 661.83Q3227.86 577.69%2c 3312 709.55Q3413.15 594.7%2c 3528 695.86Q3681.85 489.71%2c 3888 643.56Q4117.09 512.65%2c 4248 741.74Q4434.35 568.1%2c 4608 754.45z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1033'%3e%3crect width='4320' height='720' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+      background-size:contain;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      z-index: -2;
+    }
+
+    @media screen and (max-width:500px) {
+        .imagen {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='540' preserveAspectRatio='none' viewBox='0 0 1440 540'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1045%26quot%3b)' fill='none'%3e%3crect width='1440' height='540' x='0' y='0' fill='rgba(206%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M1560 540L0 540 L0 330.76Q61.83 272.59%2c 120 334.42Q130.82 273.25%2c 192 284.07Q266.97 239.04%2c 312 314.01Q339.81 269.82%2c 384 297.64Q445.48 287.12%2c 456 348.59Q507.18 279.76%2c 576 330.94Q592.37 275.31%2c 648 291.67Q697.96 269.63%2c 720 319.6Q747.43 275.03%2c 792 302.46Q816.25 254.7%2c 864 278.95Q920.04 262.99%2c 936 319.03Q959.4 270.43%2c 1008 293.83Q1092.24 258.07%2c 1128 342.31Q1148.72 291.03%2c 1200 311.75Q1249.61 241.36%2c 1320 290.96Q1371.58 222.54%2c 1440 274.12Q1520.99 235.11%2c 1560 316.09z' fill='rgba(93%2c 193%2c 185%2c 1)'%3e%3c/path%3e%3cpath d='M1464 540L0 540 L0 358.57Q75.88 314.45%2c 120 390.33Q156.21 306.54%2c 240 342.75Q331.02 313.77%2c 360 404.79Q413.19 337.99%2c 480 391.18Q514.45 305.63%2c 600 340.09Q641.04 309.13%2c 672 350.18Q747.48 353.66%2c 744 429.14Q735.38 348.52%2c 816 339.91Q868.16 320.07%2c 888 372.23Q944.74 356.97%2c 960 413.7Q1008.37 342.06%2c 1080 390.43Q1127.62 318.05%2c 1200 365.66Q1248.91 294.58%2c 1320 343.49Q1382.47 333.97%2c 1392 396.44Q1421.91 354.35%2c 1464 384.26z' fill='rgba(0%2c 97%2c 169%2c 1)'%3e%3c/path%3e%3cpath d='M1464 540L0 540 L0 438.22Q66.63 384.85%2c 120 451.48Q177.3 436.78%2c 192 494.08Q245.59 427.67%2c 312 481.27Q357.39 406.66%2c 432 452.05Q453.62 401.67%2c 504 423.29Q531.87 379.16%2c 576 407.03Q676.46 387.49%2c 696 487.95Q739.65 411.61%2c 816 455.26Q862.81 382.07%2c 936 428.88Q966.5 387.38%2c 1008 417.89Q1072.42 410.31%2c 1080 474.73Q1125.4 448.13%2c 1152 493.53Q1181.31 402.83%2c 1272 432.14Q1319.88 408.01%2c 1344 455.89Q1416.68 408.57%2c 1464 481.26z' fill='rgba(81%2c 209%2c 246%2c 1)'%3e%3c/path%3e%3cpath d='M1464 540L0 540 L0 528.14Q26.83 482.97%2c 72 509.79Q95.76 461.55%2c 144 485.31Q224.61 445.92%2c 264 526.54Q318.66 509.2%2c 336 563.87Q364.21 472.08%2c 456 500.29Q534.91 459.21%2c 576 538.12Q630.75 472.87%2c 696 527.62Q771.44 483.06%2c 816 558.49Q829.13 499.63%2c 888 512.76Q954.95 459.71%2c 1008 526.66Q1080.26 478.92%2c 1128 551.18Q1182.01 485.19%2c 1248 539.21Q1267.51 486.72%2c 1320 506.23Q1362.31 476.54%2c 1392 518.85Q1407.5 462.35%2c 1464 477.85z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1045'%3e%3crect width='1440' height='540' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");            background-size: 100% 100%;
+        }
+    }
+
+    .imagen h2 {
+        color: #1c0d02;
+        font-size: 60px;
+        position: relative;
+        top:-40px;
+        padding-left: 50px;
+        z-index: -1;
+    }
+
+
 
 .barSearch{
     display:block;
@@ -17,28 +66,23 @@
 
 .inputSearch{
     display: flex;
+}
+
+.inputSearch form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.inputSearch input{
+.inputSearch input {
     display: flex;
-    width: 80%;
+    width: 60%;
     padding: 0.4em;
 }
 
-.inputSearch button{
-    border: none;
-    border-left: rgb(158, 158, 158) 0.05em solid;
-    margin-left: -4.6em;
-    padding: 0.3em 0 0.3em 0.8em; 
-    background-color: transparent;
-    border-radius: 50%;
-}
+.inputSearch button {
+    margin-top: 15px;
 
-.inputSearch button:hover{
-    font-weight: bold;
-    color:skyblue;
-    border-left: rgb(200, 255, 252) 0.05em solid;
-    cursor: pointer;
 }
