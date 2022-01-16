@@ -34,7 +34,7 @@ const CitySelected = (props) => {
             </div>
 
             <div className={styles.citiesAdd}>
-                {addFav ? <Cities /> : <></>}
+                {addFav ? <Cities setAddFav={setAddFav} /> : <></>}
             </div>
         </div>
 

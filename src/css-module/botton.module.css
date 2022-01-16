@@ -1,21 +1,13 @@
-
-
-
-
-
-/* @media(max-height:570px){
-    .botton{
-        bottom: -50%; 
-    }
+.botContainer {
+    background-color: #1c0d02;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.botContainer h5 {
+    color: #fff;
+}
 
-@media(max-width:600px){
-    .botton{
-        display: flex;
-        position: absolute;
-        bottom: -80%; 
-    }
-} */
 
 
