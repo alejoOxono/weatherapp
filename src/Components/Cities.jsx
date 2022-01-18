@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { useEffect } from "react";
 import { connect } from "react-redux"
 import { cityDeleted } from "../actions/actionsCreator"
 import styles from '../css-module/cities.module.css';
@@ -7,7 +6,7 @@ import styles from '../css-module/cities.module.css';
 
 const Cities = (props) => {
     var { city } = props
-    const [citiesView, setCitiesView] = useState(3)
+    const citiesView = 3
     const [lastCity, setLastCity] = useState(3)
     var firstCity = lastCity - citiesView
     if (firstCity<0) firstCity = 0;

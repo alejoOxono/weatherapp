@@ -20,7 +20,7 @@ function City(props) {
 
     const buttonOnClick = (e) => {
         e.preventDefault()
-        setUrl(`http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=882029dd6410ec072c925bf0f7c492ab&units=metric`)
+        setUrl(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${apiKey}&units=metric`)
 
     }
 
