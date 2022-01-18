@@ -13,7 +13,6 @@ function City(props) {
     const [cityInput, setCityInput] = React.useState('');
     const [url, setUrl] = React.useState('');
     const apiKey = '882029dd6410ec072c925bf0f7c492ab';
-    const [control, setControl] = React.useState(true);
 
     const inputOnChange = (e) => {
         setCityInput(e.target.value);
@@ -21,7 +20,7 @@ function City(props) {
 
     const buttonOnClick = (e) => {
         e.preventDefault()
-        setUrl(`http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${apiKey}&units=metric`)
+        setUrl(`http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=882029dd6410ec072c925bf0f7c492ab&units=metric`)
 
     }
 
